@@ -13,8 +13,11 @@ function wheelie(){
     return 'Wheee!';
 }
 
-function VehicleFactory(name, wheels) {
-    return Object.assign({},{name, wheels}, {drive}, {stop});
+function Car(name) {
+    return Object.assign({},{name, wheels: 4}, {drive}, {stop});
+}
+function Motorcycle(name) {
+    return Object.assign({},{name, wheels: 2}, {drive}, {wheelie}, {stop});
 }
 
-module.exports = VehicleFactory;
+module.exports = {Car, Motorcycle};
