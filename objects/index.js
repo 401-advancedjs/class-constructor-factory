@@ -2,6 +2,7 @@
 
 const VehicleConstructor = require('./vehicle-constructor.js');
 const VehicleClass = require('./vehicle-class.js');
+const VehicleFactory = require('./vehicle-factory.js');
 
 // Implement a car and motorcycle using a Constructor
 const mazda = new VehicleConstructor.Car('Mazda 3');
@@ -18,3 +19,8 @@ const gxr = new VehicleClass.Motorcycle('gxr', 2);
 console.log(gxr, gxr.wheelie(), gxr.stop());
 
 // Implement a car and motorcycle using a Factory
+const subaru = new VehicleFactory('Outback', 4);
+console.log(subaru);
+
+const cbr600 = new VehicleFactory('cbr600', 2);
+console.log(cbr600);

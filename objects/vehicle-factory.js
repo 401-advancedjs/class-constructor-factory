@@ -1,7 +1,20 @@
 
 'use strict';
 
-function CarFactory() {
+function drive(){
+    return 'Moving Forward!';
 }
 
-module.exports = CarFactory;
+function stop(){
+    return 'Stopping';
+}
+
+function wheelie(){
+    return 'Wheee!';
+}
+
+function VehicleFactory(name, wheels) {
+    return Object.assign({},{name, wheels}, {drive}, {stop});
+}
+
+module.exports = VehicleFactory;
