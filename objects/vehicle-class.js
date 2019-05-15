@@ -16,6 +16,10 @@ class Car {
 }
 
 class Motorcycle extends Car{
+    constructor(name){
+        super(name);
+        this.wheels = 2;
+    }
     wheelie(){
         return 'Wheee!';
     }

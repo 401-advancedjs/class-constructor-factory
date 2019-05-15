@@ -65,7 +65,7 @@ describe('Vehicles', () => {
 
       let motorcycle = getMotorcycle(type);
 
-      xit(`${type} (Motorcycle) has 2 wheels`, () => {
+      it(`${type} (Motorcycle) has 2 wheels`, () => {
         expect(motorcycle.wheels).toEqual(2);
       });
 
