@@ -56,7 +56,6 @@ class List {
       this.data[i] = callback(this.data[i]);
     }
   }
-
 }
 
 module.exports = List;

@@ -1,5 +1,5 @@
 {
-  "name": "lab02",
+  "name": "file-reader",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,17 +7,13 @@
     "lib": "lib"
   },
   "scripts": {
-    "test": "jest ./objects/__tests__/vehicle.test.js --verbose --coverage",
-    "test-watch": "jest --watchAll --verbose --coverage"
+    "test": "jest --coverage --verbose",
+    "test-watch": "jest --watchAll --coverage --verbose"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "jest": "^22.4.3",
-    "lint": "^1.1.2"
-  },
-  "jest": {
-    "testURL": "http://localhost/"
+    "eslint": "^5.6.1",
+    "jest": "^23.6.0"
   }
 }
