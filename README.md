@@ -1,30 +1,31 @@
 ![CF](http://i.imgur.com/7v5ASc8.png) LAB
 =================================================
 
-## Project Name
+## Classes, Inheritance, Functional Programming
 
-### Author: Student/Group Name
+### Author: Melissa Stock
 
 ### Links and Resources
-* [submission PR](http://xyz.com)
-* [travis](http://xyz.com)
-* [back-end](http://xyz.com) (when applicable)
-* [front-end](http://xyz.com) (when applicable)
+* [submission PR](https://github.com/401-advancedjs/lab02/pull/1)
+* [travis](https://www.travis-ci.com/401-advancedjs/lab02/jobs/200228891#L462)
+
 
 #### Documentation
-* [api docs](http://xyz.com) (API servers)
-* [jsdoc](http://xyz.com) (Server assignments)
-* [styleguide](http://xyz.com) (React assignments)
 
 ### Modules
 #### `modulename.js`
+
 ##### Exported Values and Methods
 
-###### `foo(thing) -> string`
-Usage Notes or examples
+###### `class Car(name) -> obj`
+###### `const Car(name) -> obj`
+###### `function Car(name) -> obj`
 
-###### `bar(array) -> array`
-Usage Notes or examples
+###### `const List(name) -> obj`
+###### `class List(name) -> obj`
+
+###### `(array) -> array`
+
 
 ### Setup
 #### `.env` requirements
@@ -32,16 +33,16 @@ Usage Notes or examples
 * `MONGODB_URI` - URL to the running mongo instance/db
 
 #### Running the app
-* `npm start`
-* Endpoint: `/foo/bar/`
-  * Returns a JSON object with abc in it.
-* Endpoint: `/bing/zing/`
-  * Returns a JSON object with xyz in it.
+* `node objects/index.js`
+  * Returns different cars and motorcycles using classes, constructors, and factories
+* `node list/index.js`
+  * Returns different methods used to modify lists
   
 #### Tests
-* How do you run tests?
+* `npm test`
 * What assertions were made?
+    * For Vehicles: confirm all cars have 4 wheels, motorcycles have 2 wheels and can do wheelies
+    * For List: confirm that lists are the correct length after being modified and that the items within the list are in the desired order
 * What assertions need to be / should be made?
+    * Error catching needs to be implemented for all files
 
-#### UML
-Link to an image of the UML for your application and response to events
