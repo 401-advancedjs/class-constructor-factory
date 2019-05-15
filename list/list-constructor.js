@@ -53,19 +53,8 @@ List.prototype.unshift = function(list) {
 // Executes the callback once on each item of the list
 List.prototype.forEach = function(callback){
   for(let i = 0; i < this.length; i++){
-    console.log(callback(this.data[i]));
     this.data[i] = callback(this.data[i]);
   }
 }
-
-
-/*
-implement the following methods on the list constructor
-push()
-pop()
-shift()
-unshift()
-forEach()
-*/
 
 module.exports = List;
